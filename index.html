@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weekly Planner</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="pageContainer">
+      <h1 class="row">Welcome to your Weekly Planner</h1>
+
+      <div class="row">
+        <div class="col">
+          <div class="bttnContainer">
+            <button type="button" class="bttn" id="bttn-addTask"><h2>Add a New Task</h2></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="bttnContainer">
+            <button type="button" class="bttn" id="bttn-planner"><h2>View Planner</h2></button>
+          </div>
+        </div>
+      </div>
+      <!--modal for view planner-->
+      <div id="modalPlanner" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3 class="modal-title">Current Tasks</h3>
+            </div>
+            <div class="modal-body">
+              <div id="card-monday" class="card">
+                <img src="img/cat.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="card-tuesday" class="card">
+                <img src="img/sakura.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="card-wednesday" class="card">
+                <img src="img/hedgehog.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="card-thursday" class="card">
+                <img src="img/waterfall.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div id="card-friday" class="card">
+                <img src="img/couple.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div id="card-saturday" class="card">
+                <img src="img/galaxy.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="card-sunday" class="card">
+                <img src="img/love.jpg" class="card-img-top">
+                <div class="card-body">
+                  <ul class="taskList">
+                    <li class="taskList-item"></li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+  </body>
+</html>
