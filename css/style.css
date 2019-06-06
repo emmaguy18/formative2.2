@@ -5,5 +5,18 @@
 }
 
 #modalPlanner{
-  display: block;
+  /* display: block; */
+
+}
+
+
+
+
+
+.modal-content{
+  max-width: 800px;
+}
+
+.card-body h5{
+  text-align: center;
 }

@@ -19,6 +19,102 @@
         </div>
       </div>
 
+      <!--modal for input tasks-->
+      <div id="modalPlanner-form" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3 class="modal-title">New Task</h3>
+            </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <h4 class="planner-form-heading">What's your new task?</h4>
+              </div>
+            </div>
+            <div class="row">
+              <form id="taskName" class="form-taskList" action="index.html" method="post">
+                  <input input type="text" name="Task" value="input new task here" input type="submit"></input>
+              </form>
+            </div>
+
+          <div class="row">
+            <div class="col">
+              <h4 class="planner-form-heading">Choose your day</h4>
+              </div>
+            </div>
+            <div class="row">
+              <form id="day" class="form-taskList" action="index.html" method="post">
+                  <input input type="text" name="day" value="input day here" input type="submit"></input>
+              </form>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <h4 class="planner-form-heading">Choose your category</h4>
+                </div>
+              </div>
+              <div id="category-checklist" class="row">
+                <ul>
+                  <li class="checked">chores</li>
+                  <li>appointments</li>
+                  <li>important</li>
+                  <li>social</li>
+                </ul>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div id="bttnContainer">
+                    <button id="submit bttn" type="button" name="button" input type="submit" value="submit"><p>Submit</p></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div id="confirmMssg-container">
+                    <p>Do you want to add more tasks?</p>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button id="no-confirmMssgBttn" type="button" name="button" input type="submit" value= "submit"><p>No</p></button>
+                    </div>
+
+                    <div class="col">
+                      <button id="yes-confirmMssgBttn" type="button" name="button" input type="submit" value= "submit"><p>Yes</p></button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="row">
         <div class="col">
           <div class="bttnContainer">
@@ -26,6 +122,8 @@
           </div>
         </div>
       </div>
+
+
       <!--modal for view planner-->
       <div id="modalPlanner" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -36,10 +134,24 @@
               </button>
               <h3 class="modal-title">Current Tasks</h3>
             </div>
+
+            <!--filter dropdown menu-->
+            <div id="dropdownMenu-filter" class="row">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div id="dropdownMenu" class="dropdown-menu">
+                 <a class="dropdown-item">Chores</a>
+                 <a class="dropdown-item">Appointments</a>
+                 <a class="dropdown-item">Important</a>
+                 <a class="dropdown-item">Social</a>
+              </div>
+            </div>
+
+
             <div class="modal-body">
               <div id="card-monday" class="card">
                 <img src="img/cat.jpg" class="card-img-top">
                 <div class="card-body">
+                    <h5>Monday</h5>
                   <ul class="taskList">
                     <li class="taskList-item"></li>
                   </ul>
@@ -49,15 +161,17 @@
               <div id="card-tuesday" class="card">
                 <img src="img/sakura.jpg" class="card-img-top">
                 <div class="card-body">
-                  <ul class="taskList">
-                    <li class="taskList-item"></li>
-                  </ul>
+                    <h5>Tuesday</h5>
+                    <ul class="taskList">
+                      <li class="taskList-item"></li>
+                    </ul>
                 </div>
               </div>
 
               <div id="card-wednesday" class="card">
                 <img src="img/hedgehog.jpg" class="card-img-top">
                 <div class="card-body">
+                    <h5>Wednesday</h5>
                   <ul class="taskList">
                     <li class="taskList-item"></li>
                   </ul>
@@ -67,6 +181,7 @@
               <div id="card-thursday" class="card">
                 <img src="img/waterfall.jpg" class="card-img-top">
                 <div class="card-body">
+                    <h5>Thursday</h5>
                   <ul class="taskList">
                     <li class="taskList-item"></li>
                   </ul>
@@ -77,6 +192,7 @@
               <div id="card-friday" class="card">
                 <img src="img/couple.jpg" class="card-img-top">
                 <div class="card-body">
+                    <h5>Friday</h5>
                   <ul class="taskList">
                     <li class="taskList-item"></li>
                   </ul>
@@ -87,6 +203,7 @@
               <div id="card-saturday" class="card">
                 <img src="img/galaxy.jpg" class="card-img-top">
                 <div class="card-body">
+                    <h5>Saturday</h5>
                   <ul class="taskList">
                     <li class="taskList-item"></li>
                   </ul>
@@ -96,6 +213,7 @@
               <div id="card-sunday" class="card">
                 <img src="img/love.jpg" class="card-img-top">
                 <div class="card-body">
+                    <h5>Sunday</h5>
                   <ul class="taskList">
                     <li class="taskList-item"></li>
                   </ul>
@@ -107,6 +225,8 @@
           </div>
         </div>
       </div>
+
+
 
 
 
