@@ -3,13 +3,22 @@ var days= [
   {
     id:1,
     day:'monday',
-    taskName:[],
+    taskName:[''],
     category:['chores', 'appointments','important','social']
   }
-]
-for (var i = 0; i < days.length; i++) {
-  var nameValue= $('#taskName')
-}
+];
+  console.log(days[i]);
+// for (var i = 0; i < days.length; i++) {
+//   document.getElementById('taskName').innerHTML + '<input>' + days[i].taskName;
+//   console.log('taskName');
+//
+//   function nameValue() {
+//     document.getElementById('taskName').innerHTML + '<input>' + days[i].taskName;
+//     console.log('taskName');
+//   };
+//   // nameValue(days[i].taskName).push;
+//   console.log('nameValue');
+// };
 
 
 
